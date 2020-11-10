@@ -1,9 +1,6 @@
 ## Introduction
 
-My PC is a 4 year old laptop:
-Alienware 15 R3 - 2016 Alienware 15 (2016), Windows 10. 6th / 7th gen Intel CPU, 1080p standard display and Ultra HD 4K Display and 120 Hz TN+WVA Anti-Glare 400-nits NVIDIA G-SYNC Enabled Display also available, as well as a Nvidia GeForce 1000 series with up to 8GB GDDR5.
-
-And nowdays cannot handle the newest game very smoothly even in a medium/low graphics.
+My PC is a 4 year old laptop and nowdays cannot handle the newest game very smoothly even in a medium/low graphics.
 At least it's what I tought: on my main computer I am used to install not only gaming related things but I use it for almost every purpose, so I tought to do a second boot to install a clean copy of Windows 10 specifically to run games and nothing else, that it's what I called Windows Gaming Edition (WinGE in short).
 However I didn't feel like to create another partition because the space on my disk is not a lot, I wished something that I can quickly backup and that's dynamic, so I had the idea: "I will create a dynamic virtual disk".
 
