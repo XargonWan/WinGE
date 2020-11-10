@@ -33,7 +33,8 @@ This Gaming Edition is really giving a second wind to my PC, I can play the late
 
 ## Needed tools:
 - Any Windows 10 installation iso.
-- Hyper-V usually it's not coming with Windows Home Edition but there's a trick to install it even there.
+- Hyper-V usually it's not coming with Windows Home Edition but there's a trick to install it even there. (You can find the file attached).
+- Fix for the VHD "no space" issue (You can find the file attached).
 - At least 50GB of disk space (SSD partition duggested).
 - You should know if your PC has got a BIOS or an UEFI (check your motherboard on the internet).
 
