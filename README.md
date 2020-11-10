@@ -42,7 +42,7 @@ Guide:
 DISCLAIMER: I did this guide one month ago and I am writing it out from my memory and my scraps, please tell me if I miss something.
 I take no responsability if you mess up something, if you decide to follow my guide is all up to you.
 
-1. Creating the VHDX
+### 1. Creating the VHDX
 Open cmd as administrator (WIN+R, cmd, Open as administrator) and give the following commands:
 diskpart
 create vdisk file="C:\WinGE.vhdx" maximum=102400 type=expandable
@@ -64,6 +64,7 @@ exit
 ```
 
 1.2 UEFI
+```
 convert gpt
 create partition efi size=100
 format quick fs=fat32 label="System"
@@ -73,6 +74,7 @@ create partition primary
 format quick fs=ntfs label="Main"
 assign letter="M"
 exit
+```
 
 2. Installing Hyper-V:
 Launch Hyper-V-Enabler.bat and press Y and Enter if needed.
@@ -115,18 +117,23 @@ and follow the setps 1, 2 and 3, maybe the other are good as well but I didn't t
 Now that everything is done in the VM, it's time to boot it natively, but first we have to tell to the windows bootloader to add it to the list, the second part is different if you're on a BIOS or an UEFI, so just check the desired paragraph.
 As already done before open cmd as administrator.
 
+```
 diskpart
 select vdisk file=C:\WinGE.vhdx
 attach vdisk
 list volume
+```
 
 Now check the volume number of your WinGE.vhdx, let's suppose that it's the number 3:
 
+```
 select volume 3
 assign letter=v
 exit
+```
 
 5.1 BIOS
+```
 V:
 cd v:\windows\system32
 bcdboot v:\windows /s S: /f BIOS
@@ -134,8 +141,10 @@ diskpart
 select vdisk file=C:\WinGE.vhdx
 detach vdisk
 exit
+```
 
 5.2 UEFI
+```
 V:\
 cd v:\windows\system32
 bcdboot v:\windows /s S: /f UEFI
@@ -143,6 +152,7 @@ diskpart
 select vdisk file=C:\WinGE.vhdx
 detach vdisk
 exit
+```
 
 Now it's time to reboot and select the newly boot entry, to know which one is the Gaming Edition just check the one that carries the WinGE.vhdx indication.
 
