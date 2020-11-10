@@ -1,4 +1,4 @@
-#Introduction
+Introduction
 
 My PC is a 4 year old laptop:
 Alienware 15 R3 - 2016 Alienware 15 (2016), Windows 10. 6th / 7th gen Intel CPU, 1080p standard display and Ultra HD 4K Display and 120 Hz TN+WVA Anti-Glare 400-nits NVIDIA G-SYNC Enabled Display also available, as well as a Nvidia GeForce 1000 series with up to 8GB GDDR5.
@@ -52,6 +52,7 @@ clean
 Now if you have BIOS please follow 1.1, if yo have UEFI follow 1.2.
 
 1.1 BIOS
+```
 create partition primary size=100
 format quick fs=ntfs label="System"
 assign letter="S"
@@ -60,6 +61,7 @@ create partition primary
 format quick fs=ntfs label="Main"
 assign letter="M"
 exit
+```
 
 1.2 UEFI
 convert gpt
