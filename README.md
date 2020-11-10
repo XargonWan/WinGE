@@ -39,7 +39,7 @@ This Gaming Edition is really giving a second wind to my PC, I can play the late
 
 ## Guide:
 
-DISCLAIMER: I did this guide one month ago and I am writing it out from my memory and my scraps, please tell me if I miss something.
+**DISCLAIMER:** I did this guide one month ago and I am writing it out from my memory and my scraps, please tell me if I miss something.
 I take no responsability if you mess up something, if you decide to follow my guide is all up to you.
 
 ### 1. Creating the VHDX
