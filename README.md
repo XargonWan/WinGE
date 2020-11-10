@@ -44,10 +44,12 @@ I take no responsability if you mess up something, if you decide to follow my gu
 
 ### 1. Creating the VHDX
 Open cmd as administrator (WIN+R, cmd, Open as administrator) and give the following commands:
+```
 diskpart
 create vdisk file="C:\WinGE.vhdx" maximum=102400 type=expandable
 attach vdisk
 clean
+```
 
 Now if you have BIOS please follow 1.1, if yo have UEFI follow 1.2.
 
