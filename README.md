@@ -204,6 +204,23 @@ Beware that this is disabling all the windows hotkeys such as volume +, volume -
 In order to launch any other app you need to press CTRL+ALT+DEL, Task Manager, File -> Run (or add it as a software inside Playnite).
 I din't find any workarounds to enable them yet, but I may update the guide as soon as I find it.
 
+### 12. [OPTIONAL] Quick reboot link
+If you want to boot from your main partition directly into the Windows Gaming Edition you can reate a batch file as follows:
+```
+bcdedit /bootsequence {7feq7c4g-219q-19hu-7c14-47349d3f15z4} /addfirst
+Shutdown /r /t 0
+```
+where {7feq7c4g-219q-19hu-7c14-47349d3f15z4} must be replaced withthe ID of your WinGE, in order to find it open the prompt as admin and do:
+```
+bcdedit
+```
+and find the rows
+'''
+identifier          {7feq7c4g-219q-19hu-7c14-47349d3f15z4}
+device              vhd=[C:]\WinGE.vhdx
+'''
+Then just insert your code as I did in the batch file.
+
 
 ## FAQ(s):
 
