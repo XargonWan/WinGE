@@ -77,7 +77,7 @@ exit
 ```
 
 ### 2. Installing Hyper-V:
-Launch Hyper-V-Enabler.bat and press Y and Enter if needed.
+Launch [Hyper-V-Enabler.bat](https://github.com/XargonWan/WinGE/releases/) and press Y and Enter if needed.
 This will take a while, lay back and have a tea.
 
 ### 3. Hyper-V procedures
@@ -102,13 +102,13 @@ This will take a while, lay back and have a tea.
 #### 3.3 Setting up Windows Gaming Edition:
 - Install Windows 10 as you would normally do, format the disk if necessary, don't worry it's a virtual disk and nothing can happen to your real one.
 - Do the needed Windows updates.
-- Run the "VHD Expansion Fix.reg" file, otherwise you will have issues when you will really boot your system.
-- Install Playnite.
+- Run the ["VHD Expansion Fix.reg"](https://github.com/XargonWan/WinGE/releases/) file, otherwise you will have issues when you will really boot your system.
+- Install [Playnite](https://playnite.link/).
 - Install what you like but keep in mind to install the least as possible to don't consume any resources and avoid heavy softwares like Chrome. I just installed Discord, Steam and the other stores such as GOG, UBI Connect, Origin, Bethesda, itch.io, Twitch and Battle.net.
 
 ### 4. Tweaking WinGE for maximum performance:
 - First uninstall everything you don't need from Windows 10 (aka bloatware) by going on install/remove programs on the Control Panel.
-- Go here: https://thegeekpage.com/optimize-your-windows-10-pc-for-gaming/
+- Go [here](https://thegeekpage.com/optimize-your-windows-10-pc-for-gaming/)
 and follow the setps 1, 2 and 3, maybe the other are good as well but I didn't try them, I don't know if they're messing up with the virtual drive.
 - Then follow the step 4 of the previous guide but until the point 8 only (again, I don't know if the others are good, I didn't try them).
 - Shutdown the WindowsGE inside the virtual machine (don't just close the VM, press Start and then Shutdown!).
@@ -158,7 +158,7 @@ Now it's time to reboot and select the newly boot entry, to know which one is th
 
 
 ### 6. Drives letter check
-If, like me, you;re using a second drive/partition to store your games and playnite you may notice that the drive that was for example D: into your main partiton now is different, in my case was E; and of course all the Playnite paths are becoming not correct because they're pointing to D:\Games (in my case).
+If, like me, you're using a second drive/partition to store your games and playnite you may notice that the drive that was for example D: into your main partiton now is different, in my case was E; and of course all the Playnite paths are becoming not correct because they're pointing to D:\Games (in my case).
 In order to fix this we have to:
 - open the regedit (WIN+R, regedit, enter).
 - browse to HKEY_LOCAL_MACHINE\SYSTEM\MountedDevices
