@@ -100,7 +100,7 @@ This will take a while, lay back and have a tea.
 - End.
 
 #### 3.3 Setting up Windows Gaming Edition:
-- Install Windows 10 as you would normally do, format the disk if necessary, don;t worry it's a virtual disk and nothing can happen to your real one.
+- Install Windows 10 as you would normally do, format the disk if necessary, don't worry it's a virtual disk and nothing can happen to your real one.
 - Do the needed Windows updates.
 - Run the "VHD Expansion Fix.reg" file, otherwise you will have issues when you will really boot your system.
 - Install Playnite.
